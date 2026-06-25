@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const HERO_CANDLES = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/4a5b11f3-3340-4676-9613-ee99ac29736e.jpg';
 const PRAYING = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/a6cfea0d-532a-4dca-ba9b-1445eb9f08a4.jpg';
+const ICONS_IMG = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/675838a2-adc2-4d75-a92b-8df232896982.jpg';
 
 const candles = [
   {
@@ -115,6 +116,40 @@ const Index = () => {
               alt="Горящие церковные свечи"
               className="relative rounded-[2rem] shadow-2xl shadow-primary/20 object-cover w-full h-[34rem] md:h-[40rem]"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Icons Saints Banner */}
+      <section className="py-16 bg-accent/30 border-y border-border/50">
+        <div className="container grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <p className="text-xs tracking-[0.25em] uppercase text-primary mb-4">Православные иконы</p>
+            <h2 className="font-display text-4xl md:text-5xl font-medium mb-5 leading-tight">
+              Свечи перед<br />ликами святых
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              Зажечь свечу у иконы — древняя православная традиция. Тихое пламя несёт наши молитвы к Богородице, Господу и святым угодникам.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {['Господь Вседержитель', 'Богородица', 'Николай Чудотворец', 'Серафим Саровский'].map((saint) => (
+                <span key={saint} className="text-xs px-4 py-2 rounded-full bg-card border border-border text-muted-foreground">
+                  {saint}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="relative">
+            <div className="absolute -inset-4 bg-gradient-to-tr from-primary/10 to-transparent blur-2xl rounded-full" />
+            <img
+              src={ICONS_IMG}
+              alt="Православные иконы в золотых окладах"
+              className="relative rounded-2xl shadow-xl shadow-primary/15 object-cover w-full h-72 md:h-96"
+            />
+            <div className="absolute bottom-4 left-4 right-4 bg-card/80 backdrop-blur-sm rounded-xl p-4 border border-border/60">
+              <p className="font-display text-lg font-medium mb-0.5">Свечи к иконам</p>
+              <p className="text-xs text-muted-foreground">Подберём нужную свечу к любому образу</p>
+            </div>
           </div>
         </div>
       </section>
