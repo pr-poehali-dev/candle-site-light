@@ -3,7 +3,7 @@ import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
 const HERO_CANDLES = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/4a5b11f3-3340-4676-9613-ee99ac29736e.jpg';
-const PRAYING = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/a6cfea0d-532a-4dca-ba9b-1445eb9f08a4.jpg';
+const PRAYING = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/00472232-bb3f-4ad7-a8ff-54876ee4a107.jpg';
 const ICONS_IMG = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/675838a2-adc2-4d75-a92b-8df232896982.jpg';
 
 const candles = [
@@ -193,11 +193,15 @@ const Index = () => {
         <div className="container grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative order-2 lg:order-1">
             <div className="absolute -inset-6 bg-gradient-to-bl from-primary/10 to-transparent blur-3xl rounded-full" />
-            <img
-              src={PRAYING}
-              alt="Молящаяся девушка в храме"
-              className="relative rounded-[2rem] shadow-2xl shadow-primary/20 object-cover w-full h-[42rem]"
-            />
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-primary/20 w-full h-[42rem]">
+              <img
+                src={PRAYING}
+                alt="Молящаяся девушка у свечей"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-background/20" />
+              <div className="absolute inset-0" style={{ backdropFilter: 'blur(1.5px)', WebkitBackdropFilter: 'blur(1.5px)', maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, black 100%)', WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, black 100%)' }} />
+            </div>
           </div>
           <div className="order-1 lg:order-2">
             <p className="text-xs tracking-[0.25em] uppercase text-primary mb-4">О свечах</p>
