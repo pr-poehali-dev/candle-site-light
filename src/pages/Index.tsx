@@ -196,7 +196,7 @@ const Index = () => {
             <img
               src={PRAYING}
               alt="Молящаяся девушка в храме"
-              className="relative rounded-[2rem] shadow-2xl shadow-primary/20 object-cover w-full h-[32rem]"
+              className="relative rounded-[2rem] shadow-2xl shadow-primary/20 object-cover w-full h-[42rem]"
             />
           </div>
           <div className="order-1 lg:order-2">
