@@ -191,19 +191,7 @@ const Index = () => {
       {/* About */}
       <section id="about" className="py-24">
         <div className="container grid lg:grid-cols-2 gap-16 items-center">
-          <div className="relative order-2 lg:order-1">
-            <div className="absolute -inset-6 bg-gradient-to-bl from-primary/10 to-transparent blur-3xl rounded-full" />
-            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-primary/20 w-full h-[42rem]">
-              <img
-                src={PRAYING}
-                alt="Молящаяся девушка у свечей"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-background/20" />
-              <div className="absolute inset-0" style={{ backdropFilter: 'blur(1.5px)', WebkitBackdropFilter: 'blur(1.5px)', maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, black 100%)', WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, black 100%)' }} />
-            </div>
-          </div>
-          <div className="order-1 lg:order-2">
+          <div>
             <p className="text-xs tracking-[0.25em] uppercase text-primary mb-4">О свечах</p>
             <h2 className="font-display text-4xl md:text-5xl font-medium mb-7 leading-tight">
               Свеча — это видимая молитва
@@ -228,6 +216,18 @@ const Index = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+          <div className="relative">
+            <div className="absolute -inset-6 bg-gradient-to-bl from-primary/10 to-transparent blur-3xl rounded-full" />
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-primary/20 w-full h-[42rem]">
+              <img
+                src={PRAYING}
+                alt="Молящаяся девушка у свечей"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-background/20" />
+              <div className="absolute inset-0" style={{ backdropFilter: 'blur(1.5px)', WebkitBackdropFilter: 'blur(1.5px)', maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, black 100%)', WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, black 100%)' }} />
             </div>
           </div>
         </div>
