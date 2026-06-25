@@ -3,7 +3,7 @@ import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
 const HERO_CANDLES = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/4a5b11f3-3340-4676-9613-ee99ac29736e.jpg';
-const PRAYING = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/7de215ab-c623-4351-9767-01aa946f6049.jpg';
+const PRAYING = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/547287be-6a6e-450e-b811-906afdc3023c.jpg';
 const ICONS_IMG = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/5ed2436f-225b-4ef3-b30f-b3e0ba45315b.jpg';
 
 const candles = [
