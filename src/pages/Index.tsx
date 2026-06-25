@@ -2,8 +2,8 @@ import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
-const HERO_CANDLES = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/97c3388c-3cf8-4050-9ef5-0753543b88e5.jpg';
-const PRAYING = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/413c80c1-44f1-4740-b2bb-522a99077282.jpg';
+const HERO_CANDLES = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/4a5b11f3-3340-4676-9613-ee99ac29736e.jpg';
+const PRAYING = 'https://cdn.poehali.dev/projects/15b929c3-e80a-466d-8acf-73ba9904f36c/files/a6cfea0d-532a-4dca-ba9b-1445eb9f08a4.jpg';
 
 const candles = [
   {
